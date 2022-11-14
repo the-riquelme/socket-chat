@@ -1,1 +1,1 @@
-# socket-chat
+# Socket Chat
