@@ -2,7 +2,7 @@ import socket
 
 # config and connect client to attendant
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-client.connect(('127.0.0.1', 2323))
+client.connect(('127.0.0.1', 2525))
 
 finished = False
 print('Type exit to end the chat...')
@@ -16,6 +16,6 @@ while not finished:
   if msg == 'exit':
     finished = True
   else:
-    print(msg)
+    print('Response: ' + msg)
     
 client.close()
