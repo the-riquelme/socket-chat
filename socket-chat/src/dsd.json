@@ -1,0 +1,99 @@
+{
+  "rowId": "58bc6692cd9b0f23558d45e57eaea017",
+  "id": 25,
+  "qty": "1",
+  "name": "Camisa Polo Masculina Options",
+  "price": 21,
+  "weight": 0,
+  "options": {
+    "attribute": [
+      {
+        "id": 1168,
+        "category_id": 126,
+        "variation_id": 131,
+        "term_id": 25,
+        "attribute": {
+          "id": 126,
+          "name": "Cor"
+        },
+        "variation": {
+          "id": 131,
+          "name": "Azul"
+        }
+      },
+      {
+        "id": 1169,
+        "category_id": 126,
+        "variation_id": 133,
+        "term_id": 25,
+        "attribute": {
+          "id": 126,
+          "name": "Cor"
+        },
+        "variation": {
+          "id": 133,
+          "name": "Vermelho"
+        }
+      },
+      {
+        "id": 1170,
+        "category_id": 136,
+        "variation_id": 137,
+        "term_id": 25,
+        "attribute": {
+          "id": 136,
+          "name": "Tamanho"
+        },
+        "variation": {
+          "id": 137,
+          "name": "P"
+        }
+      },
+      {
+        "id": 1171,
+        "category_id": 136,
+        "variation_id": 138,
+        "term_id": 25,
+        "attribute": {
+          "id": 136,
+          "name": "Tamanho"
+        },
+        "variation": {
+          "id": 138,
+          "name": "M"
+        }
+      },
+      {
+        "id": 1172,
+        "category_id": 143,
+        "variation_id": 144,
+        "term_id": 25,
+        "attribute": {
+          "id": 143,
+          "name": "Tecido"
+        },
+        "variation": {
+          "id": 144,
+          "name": "seda"
+        }
+      },
+      {
+        "id": 1173,
+        "category_id": 143,
+        "variation_id": 145,
+        "term_id": 25,
+        "attribute": {
+          "id": 143,
+          "name": "Tecido"
+        },
+        "variation": {
+          "id": 145,
+          "name": "l\u00e3"
+        }
+      }
+    ],
+    "options": [],
+    "preview": "\/\/ronie.ecomstore.com.br\/uploads\/22\/22\/09\/0909221662726383631b30ef342e0.webp"
+  },
+  "taxRate": "0"
+}
