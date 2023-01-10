@@ -1,5 +1,5 @@
 from threading import *
-import time
+from time import sleep
 
 count = 0
 
@@ -12,13 +12,15 @@ class Process(Thread):
 
     def run(self):
         global count
-        semaphore.acquire()
-        print("Processo: {0} entrou na regiao critica, contador: {1}".format(
-            self.position, count))
-        count = count + 1
-        print("Processo: {0} saiu da regiao critica, contador: {1}".format(
-            self.position, count))
-        semaphore.release()
+        while True:
+            semaphore.acquire()
+            print("Processo: {0} entrou na regiao critica, contador: {1}".format(
+                self.position, count))
+            count = count + 1
+            print("Processo: {0} saiu da regiao critica, contador: {1}".format(
+                self.position, count))
+            semaphore.release()
+            sleep(1)
 
 
 semaphore = Semaphore(1)
