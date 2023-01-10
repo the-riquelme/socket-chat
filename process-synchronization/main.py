@@ -1,4 +1,3 @@
-# importing the modules
 from threading import *
 import time
 
@@ -13,17 +12,16 @@ class Process(Thread):
 
     def run(self):
         global count
-        while True:
-            semaphore.acquire()
-            print("Processo: {0} entrou na regiao critica, contador: {1}".format(
-                self.position, count))
-            count = count + 1
-            print("Processo: {0} saiu da regiao critica, contador: {1}".format(
-                self.position, count))
-            semaphore.release()
+        semaphore.acquire()
+        print("Processo: {0} entrou na regiao critica, contador: {1}".format(
+            self.position, count))
+        count = count + 1
+        print("Processo: {0} saiu da regiao critica, contador: {1}".format(
+            self.position, count))
+        semaphore.release()
 
 
-semaphore = Semaphore(10)
+semaphore = Semaphore(1)
 for i in range(10):
     process = Process(i, semaphore)
     process.start()
